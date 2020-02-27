@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let arrayNumbers = [1, 2, 3, 4, 5, 6, 10, 15, 20, 8, 9, 7];
+    console.log(arrayNumbers);
+    function reverseElementsOfArray() {
+        let firstIndex = 0;
+        let lastIndex = arrayNumbers.length - 1;
+        let bridge;
+        for (let i = 0; i < (arrayNumbers.length - 1) / 2; i++) {
+            bridge = arrayNumbers[firstIndex + i];
+            arrayNumbers[i] = arrayNumbers[lastIndex - i];
+            arrayNumbers[lastIndex - i] = bridge;
+        }
+    }
+    reverseElementsOfArray();
+    console.log(arrayNumbers);
+</script>
+</body>
+</html>

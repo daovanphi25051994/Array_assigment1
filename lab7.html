@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let arrayNumbers = [1, 5, -3, -7, 2, -14, 0, 222, -53, 100];
+    let enterNumber = parseInt(prompt("Enter a number"));
+    for (let i = 0; i < arrayNumbers.length; i++){
+        if (arrayNumbers[i] === enterNumber){
+            arrayNumbers.splice(i, 1);
+            arrayNumbers.push(0);
+        }
+    }
+  console.log(arrayNumbers);
+</script>
+</body>
+</html>

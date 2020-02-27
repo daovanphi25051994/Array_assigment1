@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let indexOfMax = 0;
+    let arrNumbers = [2, 5, 121, 623, 2, 21, 52, 141, 434, 44];
+    let max = arrNumbers[0];
+    for (let i = 1; i < arrNumbers.length; i++) {
+        if (arrNumbers[i] > max) {
+            max = arrNumbers[i];
+            indexOfMax = i;
+        }
+    }
+    alert("so lon nhat trong mang la " + max + " va nam o vi tri thu " + indexOfMax);
+</script>
+</body>
+</html>
